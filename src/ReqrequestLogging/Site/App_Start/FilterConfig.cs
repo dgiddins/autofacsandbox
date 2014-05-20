@@ -1,5 +1,6 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using Site.Filters;
+using IDependencyResolver = System.Web.Http.Dependencies.IDependencyResolver;
 
 namespace Site
 {
@@ -7,6 +8,7 @@ namespace Site
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
+            
             filters.Add(new HandleErrorAttribute());
         }
     }
